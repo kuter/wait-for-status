@@ -8,6 +8,14 @@
 $ ./wait-own.sh -t 10 -s 200 localhost:8000 -- behave
 ```
 
+inside docker-compose:
+
+```
+  tests:
+      image: tests
+      command: ["./wait-for-status.sh", "http://google.com", "--", "behave"]
+```
+
 ## Info
 
-That script is inspired by [wait-for-it.sh](https://github.com/vishnubob/wait-for-it)
+This script is **strongly** inspired by [wait-for-it.sh](https://github.com/vishnubob/wait-for-it).
