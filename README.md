@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-$ ./wait-own.sh -t 10 -s 200 localhost:8000 -- behave
+$ ./wait-for-status.sh -t 10 -s 200 localhost:8000 -- behave
 ```
 
 inside docker-compose:
